@@ -1,45 +1,77 @@
 <template>
-  <footer class="pt-10 bg-secondary-100 md:mb-0" data-testid="footer" :class="simplifiedFooter ? 'mb-0' : 'mb-[58px]'">
-    <div
-      class="grid justify-center grid-cols-[1fr_1fr] md:grid-cols-[repeat(4,1fr)] px-4 md:px-6 pb-10 max-w-screen-3xl mx-auto"
-      data-testid="section-top"
-    >
-      <div v-for="{ key, subcategories } in categories" :key="key" class="min-w-[25%] xs:min-w-[50%] flex flex-col">
-        <div class="ml-4 text-lg font-medium leading-7 text-neutral-900">
-          {{ $t(`categories.${key}.label`) }}
+  <footer class="bg-gray md:mb-0" data-testid="footer" :class="simplifiedFooter ? 'mb-0' : 'mb-[58px]'">
+    <div class="usp-footer">
+      <ul class="max-w-screen-2xl mx-auto relative flex flex-row flex-wrap justify-between py-4">
+        <li class="flex items-center text-white text-xs usp-item mb-3 md:mb-0 justify-center">
+          <SfIconCheckCircle size="xs" class="mr-2" />Schneller Versand
+        </li>
+        <li class="flex items-center text-white text-xs usp-item mb-3 md:mb-0 justify-center">
+          <SfIconCheckCircle size="xs" class="mr-2" />Große Auswahl
+        </li>
+        <li class="flex items-center text-white text-xs usp-item mb-3 md:mb-0 justify-center">
+          <SfIconCheckCircle size="xs" class="mr-2" />Faire Preise
+        </li>
+        <li class="flex items-center text-white text-xs usp-item mb-3 md:mb-0 justify-center">
+          <SfIconCheckCircle size="xs" class="mr-2" />Hohe Qualität
+        </li>
+        <li class="flex items-center text-white text-xs usp-item mb-3 md:mb-0 justify-center">
+          <SfIconCheckCircle size="xs" class="mr-2" />Persönlicher Service
+        </li>
+      </ul>
+    </div>
+
+    <div class="bg-white w-full">
+      <div
+        class="max-w-screen-2xl mx-auto relative flex flex-row flex-wrap justify-between px-4 py-4 md:py-10 xl:py-28"
+      >
+        <div class="delivery lg:pl-0 mb-4 lg:mb-10 w-full">
+          <p class="text-primary-500 font-bold text-lg">Wir versenden mit</p>
+          <ul class="flex">
+            <li class="flex item mb-2"><img src="https://placehold.co/100x50" alt="dpd" class="mr-5" /></li>
+            <li class="flex item mb-2"><img src="https://placehold.co/100x50" alt="dhl" /></li>
+          </ul>
         </div>
-        <ul>
-          <SfListItem
-            v-for="{ key: subcategoryKey, link } in subcategories"
-            :key="subcategoryKey"
-            class="py-2 !bg-transparent typography-text-sm"
-          >
-            <SfLink
-              :tag="NuxtLink"
-              class="router-link-active router-link-exact-active no-underline text-neutral-600 hover:underline hover:!text-neutral-900 active:underline active:!text-neutral-900"
-              variant="secondary"
-              :to="localePath(link)"
-            >
-              {{ $t(`categories.${key}.subcategories.${subcategoryKey}`) }}
-            </SfLink>
-          </SfListItem>
-        </ul>
+        <div class="payment lg:pl-0 w-full">
+          <p class="text-primary-500 font-bold text-lg">Bequem bezahlen mit</p>
+          <ul class="flex flex-wrap">
+            <li class="flex item mb-2"><img src="https://placehold.co/100x50" alt="dpd" class="mr-5" /></li>
+            <li class="flex item mb-2"><img src="https://placehold.co/100x50" alt="dpd" class="mr-5" /></li>
+            <li class="flex item mb-2"><img src="https://placehold.co/100x50" alt="dpd" class="mr-5" /></li>
+            <li class="flex item mb-2"><img src="https://placehold.co/100x50" alt="dpd" class="mr-5" /></li>
+            <li class="flex item mb-2"><img src="https://placehold.co/100x50" alt="dpd" class="mr-5" /></li>
+            <li class="flex item mb-2"><img src="https://placehold.co/100x50" alt="dpd" class="mr-5" /></li>
+            <li class="flex item mb-2"><img src="https://placehold.co/100x50" alt="dhl" /></li>
+          </ul>
+        </div>
       </div>
     </div>
-    <hr />
 
-    <div class="bg-neutral-900" data-testid="section-bottom">
-      <div class="justify-end px-4 py-10 md:flex md:py-6 max-w-screen-3xl mx-auto">
-        <p class="flex items-center justify-center leading-5 text-center typography-text-sm text-white/50 md:ml-6">
-          {{ companyName }}
-        </p>
-      </div>
+    <div
+      class="xl:max-w-[50%] mx-auto flex flex-wrap justify-around md:justify-between px-4 pt-4 md:pt-14 lg:pt-28 pb-4"
+      data-testid="section-top"
+    >
+      <a href="#" class="m-0 font-bold text-xs">Kontakt</a>
+      <a href="#" class="m-0 font-bold text-xs">Datenschutz</a>
+      <a href="#" class="m-0 font-bold text-xs">AGB</a>
+      <a href="#" class="m-0 font-bold text-xs">Impressum</a>
+      <a href="#" class="m-0 font-bold text-xs">Zahlungsarten</a>
+      <a href="#" class="m-0 font-bold text-xs">Versand</a>
+      <a href="#" class="m-0 font-bold text-xs">Widerrufsrecht</a>
+      <a href="#" class="m-0 font-bold text-xs">Hilfe</a>
+    </div>
+
+    <div class="copy text-center text-xs text-gray-500 pb-4 md:pb-14 lg:pb-28">
+      <p>Copyright © 2025 Pegaso Marine Handel und Service GmbH</p>
+      <p>
+        Alle Preise verstehen sich inkl. MwSt. Alle Angebote sind freibleibend. Irrtümer, Druckfehler und
+        Preisänderungen vorbehalten
+      </p>
     </div>
   </footer>
 </template>
 
 <script setup lang="ts">
-import { SfLink, SfListItem } from '@storefront-ui/vue';
+import { SfLink, SfListItem, SfIconCheckCircle } from '@storefront-ui/vue';
 import { categories } from '~/mocks';
 import type { FooterProps } from './types';
 

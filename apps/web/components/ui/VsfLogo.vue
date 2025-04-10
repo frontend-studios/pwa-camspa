@@ -1,15 +1,7 @@
 <template>
   <picture>
     <template v-if="imageExtension === 'svg'">
-      <NuxtImg
-        ref="logo"
-        :src="imagePath"
-        :alt="`${{ storeName }} logo`"
-        class="w-100 h-10 py-2"
-        width="150"
-        height="40"
-        preload
-      />
+      <NuxtImg ref="logo" :src="imagePath" :alt="`${{ storeName }} logo`" class="" width="102" height="72" preload />
     </template>
     <template v-else>
       <img
@@ -19,7 +11,7 @@
         :alt="`${{ storeName }} logo`"
         :width="imgWidth"
         :height="imgHeight"
-        class="max-h-[100px] max-w-[200px]"
+        class="max-h-[72px] max-w-[102px]"
         preload
       />
     </template>
@@ -30,7 +22,7 @@
 const runtimeConfig = useRuntimeConfig();
 const storeName = runtimeConfig.public.storeName;
 const imageExtension = runtimeConfig.public.headerLogo.split('.').pop();
-const imagePath = '/_nuxt-plenty/images/logo.' + imageExtension;
+const imagePath = 'https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/logo.svg';
 const logo = ref<HTMLImageElement | null>(null);
 const imgWidth = ref<string>('');
 const imgHeight = ref<string>('');

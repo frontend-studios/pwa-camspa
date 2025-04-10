@@ -1,5 +1,5 @@
 <template>
-  <form ref="referenceRef" role="search" class="relative" @submit.prevent="handleSubmit">
+  <form ref="referenceRef" role="search" class="relative open-search" @submit.prevent="handleSubmit">
     <SfInput
       id="search-bar"
       ref="inputReference"

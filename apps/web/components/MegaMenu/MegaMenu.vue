@@ -1,27 +1,42 @@
 <template>
   <header ref="referenceRef" :class="headerClass" class="relative w-full md:sticky md:shadow-md z-10">
     <div
-      class="flex justify-between items-center flex-wrap md:flex-nowrap px-4 md:px-10 py-2 md:py-5 w-full border-0 bg-primary-500 border-neutral-200"
+      class="flex justify-between items-center flex-wrap lg:flex-nowrap px-4 md:px-0 pb-2 lg:py-5 w-full border-0 text-primary-500 max-w-screen-2xl mx-auto relative"
       data-testid="navbar-top"
     >
-      <div class="flex items-center">
+      <ul
+        class="hidden md:flex flex-row bg-primary-500 text-white lg:text-primary-500 lg:bg-white w-full lg:w-auto justify-center py-1 mb-2"
+      >
+        <li class="mr-3 flex items-center">
+          <SfIconCall size="xs" class="mr-1" /><a href="" class="lg:font-semibold">Kundenservice</a>
+        </li>
+        <li class="mr-3 flex items-center">
+          <SfIconViewList size="xs" class="mr-1" /><a href="" class="lg:font-semibold">Katalog</a>
+        </li>
+        <li class="flex items-center">
+          <SfIconStarFilled size="xs" class="mr-1" /><a href="" class="lg:font-semibold">4,8 Bewertung</a>
+        </li>
+      </ul>
+      <div class="flex items-center logo-area">
         <UiButton
           v-if="viewport.isLessThan('lg')"
           variant="tertiary"
           square
           :aria-label="t('closeMenu')"
-          class="mr-5 bg-transparent hover:bg-primary-800 hover:text-white active:bg-primary-700 active:text-white"
+          class="mr-5 text-primary-500 bg-transparent hover:bg-primary-800 hover:text-white active:bg-primary-700 active:text-white"
           @click="openMenu([])"
         >
-          <SfIconMenu class="text-white" />
+          <SfIconMenu class="text-primary-500" />
         </UiButton>
 
-        <NuxtLink
-          :to="localePath(paths.home)"
-          :aria-label="t('goToHomepage')"
-          class="flex shrink-0 w-full lg:w-48 items-center mr-auto text-white md:mr-10 focus-visible:outline focus-visible:outline-offset focus-visible:rounded-sm"
-        >
+        <NuxtLink :to="localePath(paths.home)" :aria-label="t('goToHomepage')" class="flex items-center">
           <UiVsfLogo />
+          <div class="border"></div>
+          <img
+            src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/italy.svg"
+            alt="Made in Italy"
+            class="made-in-italy"
+          />
         </NuxtLink>
       </div>
 
@@ -29,9 +44,9 @@
     </div>
 
     <div v-if="viewport.isGreaterOrEquals('lg')">
-      <nav ref="floatingRef">
+      <nav ref="floatingRef" class="bg-gray">
         <ul
-          class="flex flex-wrap px-6 py-2 bg-white border-b border-b-neutral-200 border-b-solid"
+          class="flex flex-wrap px-6 py-2 max-w-screen-2xl mx-auto relative"
           @blur="
             (event) => {
               if (!(event.currentTarget as Element).contains(event.relatedTarget as Element)) {
@@ -193,6 +208,9 @@ import {
   SfIconMenu,
   useTrapFocus,
   useDropdown,
+  SfIconStarFilled,
+  SfIconCall,
+  SfIconViewList,
 } from '@storefront-ui/vue';
 import { unrefElement } from '@vueuse/core';
 import type { MegaMenuProps } from '~/components/MegaMenu/types';
