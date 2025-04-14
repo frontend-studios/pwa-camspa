@@ -1,5 +1,5 @@
 <template>
-  <div class="fs-homepage">
+  <div class="fs-homepage class-for-push">
     <EmptyBlock v-if="dataIsEmpty" />
     <div v-if="data.length" class="content">
       <template v-for="(block, index) in data" :key="index">
