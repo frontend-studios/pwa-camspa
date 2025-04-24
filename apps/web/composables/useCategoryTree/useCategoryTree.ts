@@ -26,8 +26,9 @@ export const useCategoryTree: UseCategoryTreeMethodsReturn = () => {
   const getCategoryTree: GetCategoryTree = async () => {
     state.value.loading = true;
     try {
-      const data = await useSdk().plentysystems.getCategoryTree();
-      state.value.data = data?.data ?? state.value.data;
+      const rawData = await useSdk().plentysystems.getCategoryTree();
+      const data = rawData?.data[0].children ?? [];
+      state.value.data = data ?? state.value.data;
       return state.value.data;
     } catch (error) {
       throw new Error(error as string);
@@ -36,6 +37,14 @@ export const useCategoryTree: UseCategoryTreeMethodsReturn = () => {
     }
   };
 
+  const setCategoryTree: SetCategoryTree = (data: CategoryTreeItem[]) => {
+    state.value.data = data[0].children ?? [];
+  };
+
+  // const setCategoryTree: SetCategoryTree = (data: CategoryTreeItem[]) => {
+  //   state.value.data = data;
+  // };
+
   /**
    * @description Function for setting the category tree data.
    * @example
@@ -43,9 +52,6 @@ export const useCategoryTree: UseCategoryTreeMethodsReturn = () => {
    * setCategoryTree();
    * ```
    */
-  const setCategoryTree: SetCategoryTree = (data: CategoryTreeItem[]) => {
-    state.value.data = data;
-  };
 
   return {
     getCategoryTree,
