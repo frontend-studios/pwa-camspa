@@ -22,17 +22,17 @@
 
     <div class="bg-white w-full">
       <div
-        class="max-w-screen-2xl mx-auto relative flex flex-row flex-wrap justify-between px-4 py-4 md:py-10 xl:py-28"
+        class="max-w-screen-2xl mx-auto relative flex flex-row flex-wrap justify-between px-4 py-4 md:py-10 xl:py-28 md:grid md:grid-cols-[1fr_2fr] md:gap-4"
       >
         <div class="delivery lg:pl-0 mb-4 lg:mb-10 w-full">
-          <p class="text-primary-500 font-bold text-lg">Wir versenden mit</p>
+          <p class="text-primary-500 font-bold text-xl lg:text-2xl mb-3">Wir versenden mit</p>
           <ul class="flex">
             <li class="flex item mb-2"><img src="https://placehold.co/100x50" alt="dpd" class="mr-5" /></li>
             <li class="flex item mb-2"><img src="https://placehold.co/100x50" alt="dhl" /></li>
           </ul>
         </div>
         <div class="payment lg:pl-0 w-full">
-          <p class="text-primary-500 font-bold text-lg">Bequem bezahlen mit</p>
+          <p class="text-primary-500 font-bold text-xl lg:text-2xl mb-3">Bequem bezahlen mit</p>
           <ul class="flex flex-wrap">
             <li class="flex item mb-2"><img src="https://placehold.co/100x50" alt="dpd" class="mr-5" /></li>
             <li class="flex item mb-2"><img src="https://placehold.co/100x50" alt="dpd" class="mr-5" /></li>
@@ -47,7 +47,7 @@
     </div>
 
     <div
-      class="xl:max-w-[50%] mx-auto flex flex-wrap justify-around md:justify-between px-4 pt-4 md:pt-14 lg:pt-28 pb-4"
+      class="xl:max-w-[50%] mx-auto flex flex-wrap justify-around md:justify-between px-4 pt-4 md:pt-14 lg:pt-28 pb-4 md:pb-14 lg:pb-28"
       data-testid="section-top"
     >
       <a href="#" class="m-0 font-bold text-xs">Kontakt</a>

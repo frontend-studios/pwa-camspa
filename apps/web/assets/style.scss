@@ -96,6 +96,20 @@ apple-pay-button {
 .bg-gray {
   background-color: #f0f0f0;
 }
+.text-shadow {
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+}
+.border-left {
+  border-left: 2px solid rgb(var(--colors-2-primary-500));
+  padding-left: 7px;
+}
+.btn {
+  &:hover {
+    .border-left {
+      border-left: 2px solid #fff;
+    }
+  }
+}
 
 header {
   .open-search {
@@ -109,6 +123,8 @@ header {
       min-height: 80px;
       margin: 0 1rem;
     }
+  }
+  .fs-menu {
   }
 }
 
@@ -132,6 +148,37 @@ footer {
       @media screen and (min-width: 1024px) {
         flex: unset;
       }
+    }
+  }
+}
+
+.fs-homepage {
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+  .cat-wrapper {
+    bottom: 2rem;
+    left: 2rem;
+    right: 1rem;
+    top: auto;
+    z-index: 2;
+  }
+}
+
+.cmp-product {
+  .availability {
+    flex: 1 0 45%;
+    .availability-1 {
+      color: green;
+    }
+    svg {
+      width: 16px;
+      height: 16px;
     }
   }
 }

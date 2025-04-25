@@ -6,7 +6,7 @@ import { appConfiguration } from './configuration/app.config';
 
 export default defineNuxtConfig({
   telemetry: false,
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   typescript: {
     typeCheck: true,
   },
