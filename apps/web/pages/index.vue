@@ -3,7 +3,7 @@
     <div class="max-w-screen-2xl mx-auto relative hero grid md:grid-cols-[2fr_1fr] mb-2 md:mb-0 gap-8">
       <a href="#" class="relative">
         <img
-          src="https://placehold.co/905x700"
+          src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/homepage/hero.png"
           alt="Qualität, Schutz & Komfort von Beginn an"
           class="w-full h-full object-cover"
         />
@@ -25,7 +25,11 @@
       </a>
 
       <a href="#" class="relative">
-        <img src="https://placehold.co/450x700" alt="Hochstühle" class="w-full h-full object-cover" />
+        <img
+          src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/homepage/cat1.png"
+          alt="Hochstühle"
+          class="w-full h-full object-cover"
+        />
         <div class="overlay"></div>
         <div class="cat-wrapper absolute">
           <span class="text-white mb-0 block font-bold text-shadow text-xl md:text-3xl lg:text-4xl">Hochstühle</span>
@@ -67,7 +71,11 @@
   <div class="fs-homepage bg-gray">
     <div class="max-w-screen-2xl mx-auto relative md:grid md:grid-cols-2 mb-2 md:mb-0 gap-8 items-center">
       <a href="#" class="relative">
-        <img src="https://placehold.co/700x700" alt="Kinderwagen" class="w-full h-full object-cover" />
+        <img
+          src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/homepage/cat2.png"
+          alt="Kinderwagen"
+          class="w-full h-full object-cover"
+        />
         <div class="overlay"></div>
         <div class="cat-wrapper absolute">
           <span class="text-white mb-0 block font-bold text-shadow text-xl md:text-3xl lg:text-4xl">Kinderwagen</span>
@@ -76,7 +84,7 @@
           >
         </div>
       </a>
-      <div class="thumbs">
+      <div class="thumbs mt-5 md:mt-0">
         <p class="text-primary-500 text-3xl mb-2 block font-bold">Entdecken Sie unsere Kinderwagen</p>
         <RecommendedProducts :category-id="customProductsCategoryIdFirst" />
         <button
@@ -104,7 +112,11 @@
     <NuxtLazyHydrate when-visible>
       <div class="max-w-screen-2xl mx-auto relative grid md:grid-cols-[1fr_1fr] mb-5 md:my-8 gap-8">
         <a href="#" class="relative">
-          <img src="https://placehold.co/700x700" alt="Traumhafte Nächte" class="w-full h-full object-cover" />
+          <img
+            src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/homepage/cat3.png"
+            alt="Traumhafte Nächte"
+            class="w-full h-full object-cover"
+          />
           <div class="overlay"></div>
           <div class="cat-wrapper absolute">
             <span class="text-white mb-0 block font-bold text-shadow text-xl md:text-3xl lg:text-4xl"
@@ -123,7 +135,11 @@
         </a>
 
         <a href="#" class="relative">
-          <img src="https://placehold.co/700x700" alt="Bade-Wickel-Kombinationen" class="w-full h-full object-cover" />
+          <img
+            src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/homepage/cat4.png"
+            alt="Bade-Wickel-Kombinationen"
+            class="w-full h-full object-cover"
+          />
           <div class="overlay"></div>
           <div class="cat-wrapper absolute">
             <span class="text-white mb-0 block font-bold text-shadow text-xl md:text-3xl lg:text-4xl">
@@ -155,7 +171,11 @@
       </div>
       <div class="max-w-screen-2xl mx-auto relative md:grid md:grid-cols-2 gap-8 items-center pb-5 md:py-8">
         <a href="#" class="relative">
-          <img src="https://placehold.co/700x700" alt="Autositze" class="w-full h-full object-cover" />
+          <img
+            src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/homepage/cat5.png"
+            alt="Autositze"
+            class="w-full h-full object-cover"
+          />
           <div class="overlay"></div>
           <div class="cat-wrapper absolute">
             <span class="text-white mb-0 block font-bold text-shadow text-xl md:text-3xl lg:text-4xl">Autositze</span>
@@ -164,7 +184,7 @@
             >
           </div>
         </a>
-        <div class="thumbs">
+        <div class="thumbs mt-5 md:mt-0">
           <p class="text-primary-500 text-3xl mb-2 block font-bold">Entdecken Sie unsere Autositze</p>
           <RecommendedProducts :category-id="customProductsCategoryIdThird" />
           <button
