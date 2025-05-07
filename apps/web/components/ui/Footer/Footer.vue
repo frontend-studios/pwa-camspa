@@ -27,20 +27,94 @@
         <div class="delivery lg:pl-0 mb-4 lg:mb-10 w-full">
           <p class="text-primary-500 font-bold text-xl lg:text-2xl mb-3">Wir versenden mit</p>
           <ul class="flex">
-            <li class="flex item mb-2"><img src="https://placehold.co/100x50" alt="dpd" class="mr-5" /></li>
-            <li class="flex item mb-2"><img src="https://placehold.co/100x50" alt="dhl" /></li>
+            <li class="flex item mb-2">
+              <img
+                src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/Icons_Zahlung_Versand/ts_dhl.png"
+                alt="DHL"
+                class="mr-5"
+              />
+            </li>
+            <li class="flex item mb-2">
+              <img
+                src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/Icons_Zahlung_Versand/ts_dpd.png"
+                alt="dpd"
+                class="mr-5"
+              />
+            </li>
+            <li class="flex item mb-2">
+              <img
+                src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/Icons_Zahlung_Versand/hermes-icon-delivery.png"
+                alt="hermes"
+                class="mr-5"
+              />
+            </li>
+            <li class="flex item mb-2">
+              <img
+                src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/Icons_Zahlung_Versand/ids.png"
+                alt="IDs"
+                class=""
+              />
+            </li>
           </ul>
         </div>
         <div class="payment lg:pl-0 w-full">
           <p class="text-primary-500 font-bold text-xl lg:text-2xl mb-3">Bequem bezahlen mit</p>
           <ul class="flex flex-wrap">
-            <li class="flex item mb-2"><img src="https://placehold.co/100x50" alt="dpd" class="mr-5" /></li>
-            <li class="flex item mb-2"><img src="https://placehold.co/100x50" alt="dpd" class="mr-5" /></li>
-            <li class="flex item mb-2"><img src="https://placehold.co/100x50" alt="dpd" class="mr-5" /></li>
-            <li class="flex item mb-2"><img src="https://placehold.co/100x50" alt="dpd" class="mr-5" /></li>
-            <li class="flex item mb-2"><img src="https://placehold.co/100x50" alt="dpd" class="mr-5" /></li>
-            <li class="flex item mb-2"><img src="https://placehold.co/100x50" alt="dpd" class="mr-5" /></li>
-            <li class="flex item mb-2"><img src="https://placehold.co/100x50" alt="dhl" /></li>
+            <li class="flex item mb-2">
+              <img
+                src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/Icons_Zahlung_Versand/Amazon--pay.png"
+                alt="AmazonPay"
+                class="mr-5"
+              />
+            </li>
+            <li class="flex item mb-2">
+              <img
+                src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/Icons_Zahlung_Versand/billie.png"
+                alt="Billie"
+                class="mr-5"
+              />
+            </li>
+            <li class="flex item mb-2">
+              <img
+                src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/Icons_Zahlung_Versand/Klarna_Zahlung.png"
+                alt="Klarna"
+                class="mr-5"
+              />
+            </li>
+            <li class="flex item mb-2">
+              <img
+                src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/Icons_Zahlung_Versand/paypal.png"
+                alt="PayPal"
+                class="mr-5"
+              />
+            </li>
+            <li class="flex item mb-2">
+              <img
+                src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/Icons_Zahlung_Versand/ts_kreditkarte.png"
+                alt="Visa"
+                class="mr-5"
+              />
+            </li>
+            <li class="flex item mb-2">
+              <img
+                src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/Icons_Zahlung_Versand/ts_mastercard-png.png"
+                alt="Mastercard"
+                class="mr-5"
+              />
+            </li>
+            <li class="flex item mb-2">
+              <img
+                src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/Icons_Zahlung_Versand/ts_SEPA.png"
+                alt="SEPA"
+                class="mr-5"
+              />
+            </li>
+            <li class="flex item mb-2">
+              <img
+                src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/Icons_Zahlung_Versand/vorkasse.png"
+                alt="Vorkasse"
+              />
+            </li>
           </ul>
         </div>
       </div>
@@ -50,13 +124,14 @@
       class="xl:max-w-[50%] mx-auto flex flex-wrap justify-around md:justify-between px-4 pt-4 md:pt-14 lg:pt-28 pb-4 md:pb-14 lg:pb-28"
       data-testid="section-top"
     >
-      <a href="#" class="m-0 font-bold text-xs">Kontakt</a>
-      <a href="#" class="m-0 font-bold text-xs">Datenschutz</a>
-      <a href="#" class="m-0 font-bold text-xs">AGB</a>
-      <a href="#" class="m-0 font-bold text-xs">Impressum</a>
+      <a href="/contact/" class="m-0 font-bold text-xs">Kontakt</a>
+      <a href="/privacy-policy/" class="m-0 font-bold text-xs">Datenschutz</a>
+      <a href="/terms-and-conditions/" class="m-0 font-bold text-xs">AGB</a>
+      <a href="/legal-disclosure/" class="m-0 font-bold text-xs">Impressum</a>
       <a href="#" class="m-0 font-bold text-xs">Zahlungsarten</a>
       <a href="#" class="m-0 font-bold text-xs">Versand</a>
-      <a href="#" class="m-0 font-bold text-xs">Widerrufsrecht</a>
+      <a href="/cancellation-rights/" class="m-0 font-bold text-xs">Widerrufsrecht</a>
+      <a href="/cancellation-form/" class="m-0 font-bold text-xs">Widerrufsformular</a>
       <a href="#" class="m-0 font-bold text-xs">Hilfe</a>
     </div>
 

@@ -7,7 +7,7 @@
       <ul
         class="hidden md:flex flex-row bg-primary-500 text-white lg:text-primary-500 lg:bg-white w-full lg:w-auto justify-center py-1 mb-2"
       >
-        <li class="mr-3 flex items-center">
+        <!-- <li class="mr-3 flex items-center">
           <SfIconCall size="xs" class="mr-1" /><a href="" class="lg:font-semibold">Kundenservice</a>
         </li>
         <li class="mr-3 flex items-center">
@@ -15,6 +15,14 @@
         </li>
         <li class="flex items-center">
           <SfIconStarFilled size="xs" class="mr-1" /><a href="" class="lg:font-semibold">4,8 Bewertung</a>
+        </li> -->
+        <li class="mr-3 flex items-center">
+          <SfIconCall size="xs" class="mr-1" />
+          <span class="lg:font-semibold lg:text-sm"><a href="tel:+4982179500001">+49 (0) 821 79500 001</a></span>
+        </li>
+        <li class="mr-3 flex items-center">
+          <SfIconEmail size="xs" class="mr-1" />
+          <span class="lg:font-semibold lg:text-sm"><a href="mailto:service@camspa.de">service@camspa.de</a></span>
         </li>
       </ul>
       <div class="flex items-center logo-area">
@@ -210,6 +218,7 @@ import {
   useDropdown,
   SfIconStarFilled,
   SfIconCall,
+  SfIconEmail,
   SfIconViewList,
 } from '@storefront-ui/vue';
 import { unrefElement } from '@vueuse/core';

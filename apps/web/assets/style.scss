@@ -148,6 +148,9 @@ footer {
       @media screen and (min-width: 1024px) {
         flex: unset;
       }
+      img {
+        max-width: 100px;
+      }
     }
   }
 }
