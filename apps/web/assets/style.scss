@@ -156,6 +156,10 @@ footer {
 }
 
 .fs-homepage {
+  .usp-icons {
+    //max-width: 55px;
+    max-height: 44px;
+  }
   .overlay {
     position: absolute;
     top: 0;
@@ -176,8 +180,19 @@ footer {
 .cmp-product {
   .availability {
     flex: 1 0 45%;
-    .availability-1 {
-      color: green;
+    .availability-1,
+    .availability-2,
+    .availability-3,
+    .availability-4 {
+      color: #008000;
+    }
+    .availability-5,
+    .availability-6,
+    .availability-7,
+    .availability-8,
+    .availability-9,
+    .availability-10 {
+      color: #9ca3af;
     }
     svg {
       width: 16px;
@@ -185,3 +200,45 @@ footer {
     }
   }
 }
+
+.grid-cols-product-page {
+  .availability {
+    .availability-1,
+    .availability-2,
+    .availability-3,
+    .availability-4 {
+      background-color: #008000 !important;
+      color: #ffffff !important;
+    }
+    .availability-5,
+    .availability-6,
+    .availability-7,
+    .availability-8,
+    .availability-9,
+    .availability-10 {
+      background-color: #9ca3af;
+    }
+  }
+  .variation-properties {
+    .variation-property-text {
+      span.font-semibold,
+      span.mr-1 {
+        display: none;
+      }
+      &::before {
+        content: '✔';
+        margin-right: 0.5rem;
+        font-size: 10px;
+      }
+    }
+    .variation-property-text {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+  }
+}
+// <template v-if="product.variation.number != ''">
+// <p class="ml-3 ml-md-0 mb-0"><span>SKU: </span>{{ productGetters.variation.number }}</p>
+// </template>
+//   barcodes?: { code: string }[]; // Add this property if it exists

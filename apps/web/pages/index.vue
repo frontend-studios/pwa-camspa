@@ -16,8 +16,8 @@
             >Babyprodukte mit Herz - Seit über 50 Jahren</span
           >
           <button
-            href="/cam/cam-3in1-kinderwagen-modus-duo-inkl-atmungsaktiver-simply-matratze_4278_5550/"
-            class="btn bg-white text-secondary-500 font-bold p-3 lg:p-5 mt-4 hover:text-white hover:bg-secondary-500 text-sm"
+            onclick="window.location.href='/cam/cam-3in1-kinderwagen-modus-duo-inkl-atmungsaktiver-simply-matratze_4278_5550/'"
+            class="btn bg-white text-secondary-500 font-bold p-3 lg:p-5 mt-5 hover:text-white hover:bg-secondary-500 text-sm inline-block"
           >
             <span class="border-left">Jetzt den Modus (duo) entdecken</span>
           </button>
@@ -37,8 +37,8 @@
             >Der erste Platz am Tisch</span
           >
           <button
-            href="/wohnen/hochstuehle/"
-            class="btn bg-white text-secondary-500 font-bold p-3 lg:p-5 mt-4 hover:text-white hover:bg-secondary-500 text-sm"
+            onclick="window.location.href='/wohnen/hochstuehle/"
+            class="btn bg-white text-secondary-500 font-bold p-3 lg:p-5 mt-5 hover:text-white hover:bg-secondary-500 text-sm inline-block"
           >
             <span class="border-left">Jetzt entdecken</span>
           </button>
@@ -50,20 +50,40 @@
     <div class="max-w-screen-2xl mx-auto relative">
       <ul class="flex justify-around">
         <li class="flex flex-col items-center justify-center">
-          <img src="https://placehold.co/75x75" alt="Beste Qualität aus Italien" class="" />
+          <img
+            src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/homepage/made-in-italy.svg"
+            alt="Beste Qualität aus Italien"
+            class="usp-icons"
+          />
           <span class="text-primary-500 mb-0 block font-bold text-xs mt-2 text-center"
             >Beste Qualität <br />aus Italien</span
           >
         </li>
         <li class="flex flex-col items-center justify-center">
-          <img src="https://placehold.co/75x75" alt="Geprüfte Sicherheit" class="" />
+          <img
+            src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/homepage/circle-check-solid.svg"
+            alt="Geprüfte Sicherheit"
+            class="usp-icons"
+          />
           <span class="text-primary-500 mb-0 block font-bold text-xs mt-2 text-center">Geprüfte <br />Sicherheit</span>
         </li>
         <li class="flex flex-col items-center justify-center">
-          <img src="https://placehold.co/75x75" alt="10.000+ zufriedene Kunden" class="" />
+          <img
+            src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/homepage/truck-solid.svg"
+            alt="Kostenfreie Lieferung"
+            class="usp-icons"
+          />
           <span class="text-primary-500 mb-0 block font-bold text-xs mt-2 text-center"
-            >10.000+ <br />zufriedene Kunden</span
+            >Kostenfreie <br />Lieferung</span
           >
+        </li>
+        <li class="flex flex-col items-center justify-center">
+          <img
+            src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/homepage/people-group-solid.svg"
+            alt="Kundensupport"
+            class="usp-icons"
+          />
+          <span class="text-primary-500 mb-0 block font-bold text-xs mt-2 text-center">Kundensupport <br />&nbsp;</span>
         </li>
       </ul>
     </div>
@@ -87,29 +107,39 @@
       <div class="thumbs mt-5 md:mt-0">
         <p class="text-primary-500 text-3xl mb-2 block font-bold">Entdecken Sie unsere Kinderwagen</p>
         <RecommendedProducts :category-id="customProductsCategoryIdFirst" />
-        <button
+        <a
           href="/kinderwagen/"
-          class="btn bg-white text-secondary-500 font-bold p-3 lg:p-5 mt-4 hover:text-white hover:bg-secondary-500 text-sm"
+          class="btn bg-white text-secondary-500 font-bold p-3 lg:p-5 mt-5 hover:text-white hover:bg-secondary-500 text-sm inline-block"
         >
           <span class="border-left">Alle Kinderwagen entdecken</span>
-        </button>
+        </a>
       </div>
     </div>
     <NuxtLazyHydrate when-visible>
       <div class="max-w-screen-2xl mx-auto relative mb-5 md:my-8">
-        <picture>
-          <source
-            srcset="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/CAM_Banner_v3.jpg"
-            media="(min-width: 768px)"
-          />
-          <img
-            src="https://placehold.co/550x550"
-            alt="Italienische Verarbeitung und Produktion"
-            class="w-full h-full object-cover"
-            loading="lazy"
-          />
-          <div class="overlay"></div>
-        </picture>
+        <a href="/wohnen/">
+          <picture>
+            <source
+              srcset="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/homepage/CAM_Banner_v5.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/homepage/CAM_mobile_banner_v1.jpg"
+              alt="Italienische Verarbeitung und Produktion"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+            <div class="overlay"></div>
+            <div class="cat-wrapper absolute">
+              <button
+                onclick="window.location.href='/wohnen/'"
+                class="btn bg-white text-secondary-500 font-bold p-3 lg:p-5 mt-5 hover:text-white hover:bg-secondary-500 text-sm inline-block"
+              >
+                <span class="border-left">Zur Kategorie Essen & Spielen</span>
+              </button>
+            </div>
+          </picture>
+        </a>
       </div>
     </NuxtLazyHydrate>
     <NuxtLazyHydrate when-visible>
@@ -129,8 +159,8 @@
               >Betten & Zubehör – Alles für süße Träume</span
             >
             <button
-              href="/wohnen-schlafen/"
-              class="btn bg-white text-secondary-500 font-bold p-3 lg:p-5 mt-4 hover:text-white hover:bg-secondary-500 text-sm"
+              onclick="window.location.href='/wohnen-schlafen/'"
+              class="btn bg-white text-secondary-500 font-bold p-3 lg:p-5 mt-5 hover:text-white hover:bg-secondary-500 text-sm inline-block"
             >
               <span class="border-left">Zu den Betten</span>
             </button>
@@ -152,8 +182,8 @@
               >Bade-Wickel-Kombinationen</span
             >
             <button
-              href="/pflegen/bade-wickel-kombinationen/"
-              class="btn bg-white text-secondary-500 font-bold p-3 lg:p-5 mt-4 hover:text-white hover:bg-secondary-500 text-sm"
+              onclick="window.location.href='/pflegen/bade-wickel-kombinationen/'"
+              class="btn bg-white text-secondary-500 font-bold p-3 lg:p-5 mt-5 hover:text-white hover:bg-secondary-500 text-sm inline-block"
             >
               <span class="border-left">Jetzt entdecken</span>
             </button>
@@ -163,12 +193,12 @@
       <div class="max-w-screen-2xl mx-auto relative thumbs mb-5 md:my-8">
         <div class="flex justify-between items-center mb-3">
           <p class="text-primary-500 text-3xl block font-bold">Bestseller</p>
-          <button
+          <a
             href="/bestseller/"
-            class="btn bg-white text-secondary-500 font-bold p-3 lg:p-5 mt-4 hover:text-white hover:bg-secondary-500 text-sm"
+            class="btn bg-white text-secondary-500 font-bold p-3 lg:p-5 mt-5 hover:text-white hover:bg-secondary-500 text-sm inline-block"
           >
             <span class="border-left">Alle Bestseller auf einen Blick!</span>
-          </button>
+          </a>
         </div>
         <RecommendedProducts :category-id="customProductsCategoryIdSecond" />
       </div>
@@ -190,12 +220,12 @@
         <div class="thumbs mt-5 md:mt-0">
           <p class="text-primary-500 text-3xl mb-2 block font-bold">Entdecken Sie unsere Autositze</p>
           <RecommendedProducts :category-id="customProductsCategoryIdThird" />
-          <button
+          <a
             href="/autositze/"
-            class="btn bg-white text-secondary-500 font-bold p-3 lg:p-5 mt-4 hover:text-white hover:bg-secondary-500 text-sm"
+            class="btn bg-white text-secondary-500 font-bold p-3 lg:p-5 mt-5 hover:text-white hover:bg-secondary-500 text-sm inline-block"
           >
             <span class="border-left">Alle Autositze entdecken</span>
-          </button>
+          </a>
         </div>
       </div>
     </NuxtLazyHydrate>
@@ -251,7 +281,7 @@ const customProductsCategoryIdThird = ref('');
 watch(
   () => categoryTree.value,
   async () => {
-    const categoryIdFirst = 304;
+    const categoryIdFirst = 306;
     const categoryIdSecond = 329;
     const categoryIdThird = 300;
     customProductsCategoryIdFirst.value = categoryIdFirst.toString();

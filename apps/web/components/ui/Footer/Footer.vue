@@ -29,14 +29,14 @@
           <ul class="flex">
             <li class="flex item mb-2">
               <img
-                src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/Icons_Zahlung_Versand/ts_dhl.png"
+                src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/Icons_Zahlung_Versand/dhl.png"
                 alt="DHL"
                 class="mr-5"
               />
             </li>
             <li class="flex item mb-2">
               <img
-                src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/Icons_Zahlung_Versand/ts_dpd.png"
+                src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/Icons_Zahlung_Versand/dpd.png"
                 alt="dpd"
                 class="mr-5"
               />
@@ -90,21 +90,21 @@
             </li>
             <li class="flex item mb-2">
               <img
-                src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/Icons_Zahlung_Versand/ts_kreditkarte.png"
+                src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/Icons_Zahlung_Versand/visa-alternate.avif"
                 alt="Visa"
                 class="mr-5"
               />
             </li>
             <li class="flex item mb-2">
               <img
-                src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/Icons_Zahlung_Versand/ts_mastercard-png.png"
+                src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/Icons_Zahlung_Versand/mastercard.avif"
                 alt="Mastercard"
                 class="mr-5"
               />
             </li>
             <li class="flex item mb-2">
               <img
-                src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/Icons_Zahlung_Versand/ts_SEPA.png"
+                src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/Icons_Zahlung_Versand/LATSCHRIFT_SEPA.avif"
                 alt="SEPA"
                 class="mr-5"
               />
@@ -128,8 +128,7 @@
       <a href="/privacy-policy/" class="m-0 font-bold text-xs">Datenschutz</a>
       <a href="/terms-and-conditions/" class="m-0 font-bold text-xs">AGB</a>
       <a href="/legal-disclosure/" class="m-0 font-bold text-xs">Impressum</a>
-      <a href="#" class="m-0 font-bold text-xs">Zahlungsarten</a>
-      <a href="#" class="m-0 font-bold text-xs">Versand</a>
+      <a href="#" class="m-0 font-bold text-xs">Zahlung & Versand</a>
       <a href="/cancellation-rights/" class="m-0 font-bold text-xs">Widerrufsrecht</a>
       <a href="/cancellation-form/" class="m-0 font-bold text-xs">Widerrufsformular</a>
       <a href="#" class="m-0 font-bold text-xs">Hilfe</a>

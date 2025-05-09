@@ -6,7 +6,7 @@
   >
     <div class="relative">
       <div class="drift-zoom-image">
-        <section class="p-4 xl:p-6">
+        <section class="p-4 xl:p-6 bg-white">
           <div class="grid grid-cols-[2fr_1fr] mt-4">
             <h1 class="font-bold typography-headline-4" data-testid="product-name">
               {{ productGetters.getName(product) }}
@@ -46,27 +46,8 @@
             :unit-content="productGetters.getUnitContent(product)"
             :unit-name="productGetters.getUnitName(product)"
           />
-          <UiBadges class="mt-4" :product="product" :use-availability="true" />
-          <div class="mt-2 variation-properties">
-            <VariationProperties :product="product" />
-          </div>
-          <div class="inline-flex items-center mt-4 mb-2">
-            <SfRating
-              size="xs"
-              :half-increment="true"
-              :value="reviewGetters.getAverageRating(reviewAverage, 'half')"
-              :max="5"
-            />
-            <SfCounter class="ml-1" size="xs">{{ reviewGetters.getTotalReviews(reviewAverage) }}</SfCounter>
-            <UiButton
-              variant="tertiary"
-              class="ml-2 text-xs text-neutral-500 cursor-pointer"
-              data-testid="show-reviews"
-              @click="scrollToReviews"
-            >
-              {{ t('showAllReviews') }}
-            </UiButton>
-          </div>
+          <UiBadges class="mt-4 availability" :product="product" :use-availability="true" />
+
           <div
             v-if="productGetters.getShortDescription(product).length > 0"
             class="mb-4 font-normal typography-text-sm whitespace-pre-line break-words"
@@ -137,6 +118,18 @@
       </div>
     </div>
   </form>
+  <div class="mt-5 lg:mt-10 variation-properties">
+    <p class="text-lg font-bold mb-3 px-3 md:px-0">Im Überblick:</p>
+    <VariationProperties :product="product" />
+  </div>
+
+  <template v-for="barcode in product.barcodes || []" :key="barcode.code">
+    <p class="ml-3 md:ml-0 mb-0"><span>EAN: </span>{{ barcode.code }}</p>
+  </template>
+
+  <template v-if="product.variation.number != ''">
+    <p class="ml-3 md:ml-0 mb-0"><span>SKU: </span>{{ product.variation.number }}</p>
+  </template>
 </template>
 
 <script setup lang="ts">

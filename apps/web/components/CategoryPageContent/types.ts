@@ -5,4 +5,5 @@ export type CategoryPageContentProps = {
   totalProducts: number;
   itemsPerPage: number;
   products?: Product[];
+  description?: string; // Beschreibung hinzufügen
 };

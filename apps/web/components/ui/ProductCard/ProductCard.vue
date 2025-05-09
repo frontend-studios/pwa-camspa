@@ -25,7 +25,7 @@
           :preload="priority || false"
           :width="getWidth()"
           :height="getHeight()"
-          class="object-contain rounded-md aspect-square w-full"
+          class="object-contain rounded-md aspect-square w-full min-h-[185px]"
           data-testid="image-slot"
         />
       </SfLink>
@@ -42,20 +42,12 @@
       <SfLink
         :tag="NuxtLink"
         :to="productPath"
-        class="no-underline font-bold text-primary-500 mb-3 line-clamp-3"
+        class="no-underline font-bold text-primary-500 mb-3 line-clamp-3 lg:min-h-[60px]"
         variant="secondary"
         data-testid="productcard-name"
       >
         {{ name }}
       </SfLink>
-      <div
-        v-if="(ratingCount ?? 0) > 0"
-        class="flex items-center pt-1 gap-1"
-        :class="{ 'mb-2': !productGetters.getShortDescription(product) }"
-      >
-        <SfRating size="xs" :half-increment="true" :value="rating ?? 0" :max="5" />
-        <SfCounter size="xs">{{ ratingCount }}</SfCounter>
-      </div>
 
       <div
         v-if="productGetters.getShortDescription(product)"
@@ -68,24 +60,22 @@
         <BasePriceInLine :base-price="basePrice" :unit-content="unitContent" :unit-name="unitName" />
       </div>
       <div class="flex justify-between flex-row items-end">
-        <div class="availability">
-          <p class="text-xs relative flex items-center">
+        <div class="availability text-xs relative flex items-center group">
+          <div class="relative flex items-center">
             <SfIconCheckCircle
-              class="mr-1"
+              :noClass="true"
               size="sm"
               :class="[
                 'availability-' + product.variation.availability.id,
-                { 'text-success': product.variation.availability.id === 1 },
-                { 'text-yellow-500': product.variation.availability.id === 2 },
-                { 'text-orange-500': product.variation.availability.id === 3 },
-                { 'text-red-500': product.variation.availability.id === 4 },
-                { 'text-black': product.variation.availability.id === 5 },
+                product.variation.availability.id <= 4 ? 'text-success' : 'text-gray-400',
               ]"
             />
-            <span class="hidden md:inline text-secondary-500 text-xs font-medium">
+            <div
+              class="absolute bottom-full left-0 mb-1 px-2 py-1 text-xs text-white bg-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap text-xs"
+            >
               {{ product.variation.availability.names.name }}
-            </span>
-          </p>
+            </div>
+          </div>
         </div>
         <div class="flex flex-col-reverse items-end">
           <span class="block font-bold text-lg leading-4" data-testid="product-card-vertical-price">
