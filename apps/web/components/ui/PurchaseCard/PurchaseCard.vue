@@ -123,10 +123,6 @@
     <VariationProperties :product="product" />
   </div>
 
-  <template v-for="barcode in product.barcodes || []" :key="barcode.code">
-    <p class="ml-3 md:ml-0 mb-0"><span>EAN: </span>{{ barcode.code }}</p>
-  </template>
-
   <template v-if="product.variation.number != ''">
     <p class="ml-3 md:ml-0 mb-0"><span>SKU: </span>{{ product.variation.number }}</p>
   </template>
