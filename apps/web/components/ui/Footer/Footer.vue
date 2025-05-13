@@ -128,7 +128,7 @@
       <a href="/privacy-policy/" class="m-0 font-bold text-xs">Datenschutz</a>
       <a href="/terms-and-conditions/" class="m-0 font-bold text-xs">AGB</a>
       <a href="/legal-disclosure/" class="m-0 font-bold text-xs">Impressum</a>
-      <a href="#" class="m-0 font-bold text-xs">Zahlung & Versand</a>
+      <a href="/zahlung-versand/" class="m-0 font-bold text-xs">Zahlung & Versand</a>
       <a href="/cancellation-rights/" class="m-0 font-bold text-xs">Widerrufsrecht</a>
       <a href="/cancellation-form/" class="m-0 font-bold text-xs">Widerrufsformular</a>
       <a href="#" class="m-0 font-bold text-xs">Hilfe</a>

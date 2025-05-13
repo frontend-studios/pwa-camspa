@@ -1,7 +1,7 @@
 <template>
   <div class="fs-homepage bg-gray">
     <div class="max-w-screen-2xl mx-auto relative hero grid md:grid-cols-[2fr_1fr] mb-2 md:mb-0 gap-8">
-      <a href="/cam/cam-3in1-kinderwagen-modus-duo-inkl-atmungsaktiver-simply-matratze_4278_5550/" class="relative">
+      <a href="/cam-3in1-kinderwagen-modus-duo-inkl-atmungsaktiver-simply-matratze_4278_5550/" class="relative">
         <img
           src="https://cdn02.plentymarkets.com/6nqf4rd4jwp6/frontend/CAM/PWA/homepage/hero.png"
           alt="Qualität, Schutz & Komfort von Beginn an"
