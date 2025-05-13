@@ -238,7 +238,3 @@ footer {
     }
   }
 }
-// <template v-if="product.variation.number != ''">
-// <p class="ml-3 ml-md-0 mb-0"><span>SKU: </span>{{ productGetters.variation.number }}</p>
-// </template>
-//   barcodes?: { code: string }[]; // Add this property if it exists

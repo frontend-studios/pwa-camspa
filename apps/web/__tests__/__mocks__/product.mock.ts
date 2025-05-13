@@ -122,6 +122,7 @@ export const ProductMock = {
     unitCombinationId: 9,
     availabilityUpdatedAt: '2022-02-15T16:56:01+01:00',
   },
+  barcodes: [{ code: '1234567890123' }, { code: '9876543210987' }],
   texts: {
     id: 259,
     lang: 'de',
